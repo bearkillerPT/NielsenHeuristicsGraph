@@ -2,7 +2,7 @@
 This program parses a text file containing the results of an Nielsen heuristics usability evaluation. The format used for the evaluation is the following:
 
 ```
- (Who found the problem+) (Problem description) -> ((evaluation 1-4 using the same order as at the top of this document)+)
+ (Who found the problem+) (Problem description) -> ((evaluation 0-4)+)
 ```
 
 This program uses the result from the parser to create a graph of the results. The graph is created using matplotlib and is very similar to the one presented in the official Nielsen Norman Group (page)[https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/] about the technique.
