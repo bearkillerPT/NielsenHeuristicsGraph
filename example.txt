@@ -1,0 +1,45 @@
+#1: Visibility of system status
+	(Emanuel, Mohannad, David) Current position/speed/heading in all modes could be viewed somewhere -> (2,1,1,1)
+	(Mohannad) The mode that the app is working in (VRU, OBU, directly to the broker) disappears after the connection is established. I think it is useful to add an icon to indicate the activated mode -> (2,2,2,2)
+
+
+#2: Match between system and the real world
+	(Gil, Emanuel) In settings OBU, Station ID and Quadtree may not be part of the user language -> (0,1,0,0)
+
+#3: User control and freedom
+	(Mohannad) I would move the “Advanced Setting” into a separate view, which includes (besides the available advanced settings) options that allow the customization of the sending and receiving topics, with individual “Reset Setting” options -> (2,2,2,2)
+	
+
+#4: Consistency and standards
+	(Gil) Denm sending occurs when the user clicks the sub-cause code event image unlike the Denm update which allows for the selection of the code with the image but has a separate button for sending -> (2,2,2,2)
+	(Mohannad) Related to the previous point in this category, I think that putting the “Change Validity” and “Change Relevance Distance” at the top of the screen can help to make it more intuitive to set these values before clicking on a sub-cause image -> (2,2,2,2)
+
+
+#5: Error prevention
+	(Gil, Mohannad) Denm sending occurs immediately when the user selects the sub-cause code and the user might not see or use the relevanceDistance and validityDuration -> (2,2,2,2)
+	(Mohannad) Related to the previous point in this category, I think that the swapping idea could help to avoid the issue -> (2,2,2,2)
+	(Mohannad) When I first used the app to publish a DENM, I did not notice that the relevanceDistance and the validityDuration can be set. I think that changing the style or even using sliders or wheels to set these values can help to make it faster and more noticeable to set these values -> (1,1,1,1)
+	(Mohannad, Emanuel, David) I have noticed that the app (sometimes) returns to the default settings after it gets completely closed -> (4,3,2,3)
+	
+#6: Recognition rather than recall
+	(Gil) The round connect button is used for creating DENM but it’s not labeled -> (3,2,2,2)
+	(Gil) The user might not notice the history and EV reservation management icons -> (1,1,1,1)
+	(Mohannad, David) I would explicitly group the options in the settings according to the mode that they apply to (VRU, OBU, directly to the broker) -> (1,3,1,1)
+
+#7: Flexibility and efficiency of use
+(Emanuel, Mohannad) A more straightforward way to find and set the current stationID in OBU mode should be implemented. Maybe through a special type of message, e.g., heartbeat. -> (2,2,2,2)
+(Emanuel) Perhaps the app could connect right away to the broker upon startup? Needs refactoring also of the mode slider -> (1,1,0,0)
+
+	
+#8: Aesthetic and minimalist design
+	(Emanuel) RSU icon should be changed -> (1,1,1,1)
+	(David) Small screens get cluttered when many messages are being received, there could be a filter list to only show what we are looking for. maybe this could also help with the performance (less callback calls ?)  -> (1, 1,1,1).
+	(David) The spacing on the text present in the sensors tab is not consistent -> (1, 2,1,1)
+	(David, Mohannad) The connection configurations should be further separated depending on the mode -> (1, 3,1,3).
+		
+#9: Help users recognize, diagnose, and recover from errors
+	(David) The MQTT connect error code as well as the meaning should be shown when connection to the broker fails, instead of the generic (“Please make sure that Host and Port are…”) -> (2, 2, 2,2)
+
+#10: Help and documentation
+	(Emanuel) There should be a link to the documentation in the app. A overlay step-by-step usage guide  would be optimal -> (1, 2, 2,1)
+	(David) There could be a clickable (?) icon explaining some configuration parameters, such as the meaning of the quadtree zoom, the units of the message sending intervals and the user modes it affects (is the username and password only used in TCC or also in OBU mode?) -> (2, 2, 2,2)
